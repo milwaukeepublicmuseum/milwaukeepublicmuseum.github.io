@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Groundbreaking: The Evolution of a Natural History Museum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="milspec.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <div class="h1-contain">
+                    <h1 id="banner" class="gray">Enter a date to see which plant became a species on that day</h1>
+                    <hr/>
+                    <h1 id="bannersp" class="gray">Introduzca una fecha para ver qué planta se convirtió en especie ese día</h1>
+                </div>
+                <form name="birthday" action="">
+                    <p>
+                        <select name="month" id="mo" class="ltyellow">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                        </select>
+                        <input type="text" name="day" id="d" size="6" class="ltyellow" autocomplete="off">
+                    </p>
+                    <p>
+                        <input type="button" value="Find Matching Species" onclick="validateDate()" class="button">
+                        <input type="button" value="Try Another Date" onclick="resetForm()" class="button">
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="row info-boxes">
+            <div class="column left">
+                <h3>The plant below was recognized as a species on this date</h3>
+                <p id="result"></p>
+            </div>
+            <div class="column right">
+                <h3>MPM specimens collected on this date:</h3>
+                <p id="msg"></p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

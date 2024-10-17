@@ -80,7 +80,7 @@ h1:last-child {margin-top: 1rem;}
 }
 .column {
     float: left;
-    padding: 1rem 3rem;
+    padding: 1rem;
     box-sizing: border-box;
     min-height: 100px;
 }
@@ -101,9 +101,6 @@ h1:last-child {margin-top: 1rem;}
     background-color: rgba(0, 0, 0, 0.4);
     color: #FFFAD9;
     flex-basis: 60%;
-}
-#result {
-    font-size: 36pt;
 }
 select {
     margin-right: .75rem;
@@ -181,9 +178,10 @@ a {
     width: 100%;
 }
 #result {
+    font-size: 2rem;
     color: #ffffff;
     margin: 1rem 0;
-    flex-basis: 75%;
+    flex-basis: 65%;
 }
 #qrcode {
     margin: 1rem 0;

@@ -20,7 +20,7 @@ hr {
 }
 h1 {
     font-family: 'Times New Roman', 'Courier New', serif;
-    font-size: 3em;
+    font-size: 2.4em;
     background: rgb(0, 158, 146);
     background: -moz-linear-gradient(90deg, rgba(0, 158, 146, 1) 6%, rgba(179, 205, 62, 1) 85%, rgba(255, 250, 217, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(0, 158, 146, 1) 6%, rgba(179, 205, 62, 1) 85%, rgba(255, 250, 217, 1) 100%);
@@ -33,18 +33,18 @@ h1 {
     text-fill-color: transparent;
     width: fit-content;
     text-align: center;
-    margin: 4rem auto;
+    margin: 3rem auto;
 }
 
-h1:first-child {margin-bottom: 1.5rem;}
-h1:last-child {margin-top: 1.5rem;}
+h1:first-child {margin-bottom: 1rem;}
+h1:last-child {margin-top: 1rem;}
 .h1-contain {
     display: block;
-    max-width: 80%;
+    width: 100%;
     margin: auto;
 }
 .left h3, .right h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-family: 'Times New Roman', 'Courier New', serif;
     background: rgb(178,225,222);
     background: -moz-linear-gradient(90deg, rgba(178,225,222,1) 6%, rgba(209,225,139,1) 85%, rgba(255,250,217,1) 100%);
@@ -87,7 +87,7 @@ h1:last-child {margin-top: 1.5rem;}
 .left, .right {
     overflow-y: auto;
     min-height: 20vh;
-    max-height: 60vh;
+    max-height: 50vh;
     border: .5rem inset rgba(255, 255, 255, 0.4);
     scrollbar-color: #B3CD3E #1E3231;
 }

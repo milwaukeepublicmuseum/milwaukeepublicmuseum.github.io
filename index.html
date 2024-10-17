@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="qrcode.js"></script>
     <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="milspec.js"></script>
 	<script type="text/javascript" src="index.js"></script>
@@ -47,7 +48,10 @@
         <div class="row info-boxes">
             <div class="column left">
                 <h3>The plant below was recognized as a species on this date</h3>
-                <p id="result"></p>
+                <div class="result-contain">
+                    <p id="result"></p>
+                    <div id="qrcode"></div>
+                </div>
             </div>
             <div class="column right">
                 <h3>MPM specimens collected on this date:</h3>

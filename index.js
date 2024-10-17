@@ -14,6 +14,7 @@ const validdate = {
 };
 
 function validateDate() {
+    softReset();
     let dayval = parseInt(document.forms["birthday"]["d"].value);
     let monthval = document.forms["birthday"]["mo"].value;
     if (dayval > validdate[monthval]) {
@@ -37,13 +38,30 @@ function validateDate() {
         width : 100,
         height : 100
     });
+    
+    function makeCode () {
+        var elText = document.getElementById("spec");
+        
+        qrcode.makeCode(elText.value);
+    }
+    
+    makeCode();
     idleTimer();
+}
+
+function softReset() {
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('qrcode').innerHTML = '';
+    document.getElementById('msg').innerHTML = '';
+    document.getElementById('d').disabled = false;
+    document.getElementById('mo').disabled = false;
 }
 
 function resetForm() {
     document.forms["birthday"]["d"].value = '';
     document.forms["birthday"]["mo"].value = '';
     document.getElementById('result').innerHTML = '';
+    document.getElementById('qrcode').innerHTML = '';
     document.getElementById('msg').innerHTML = '';
     document.getElementById('banner').innerHTML = 'Enter a date to see which plant became a species on that day';
     document.getElementById('bannersp').innerHTML = 'Introduzca una fecha para ver qué planta se convirtió en especie ese día';
@@ -67,7 +85,7 @@ function idleTimer() {
 
    function resetTimer() {
         clearTimeout(t);
-        t= setTimeout(reload, 30000);  // time is in milliseconds (1000 is 1 second)
+        t= setTimeout(reload, 300000);  // time is in milliseconds (1000 is 1 second)
     }
 }
 

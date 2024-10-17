@@ -172,3 +172,23 @@ a {
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
+.species-hidden {
+    display: none !important;
+}
+.result-contain {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+#result {
+    color: #ffffff;
+    margin: 1rem 0;
+    flex-basis: 75%;
+}
+#qrcode {
+    margin: 1rem 0;
+    flex-basis: 25%;
+}
+#qrcode img {
+    border: 5px solid #ffffff;
+}

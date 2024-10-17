@@ -85,7 +85,7 @@ function idleTimer() {
 
    function resetTimer() {
         clearTimeout(t);
-        t= setTimeout(reload, 30000);  // time is in milliseconds (1000 is 1 second)
+        t= setTimeout(reload, 90000);  // time is in milliseconds (1000 is 1 second)
     }
 }
 

@@ -18,7 +18,7 @@
                 <div class="h1-contain">
                     <h1 id="banner" class="gray">Enter a date to see which plant became a species on that day</h1>
                     <hr/>
-                    <h1 id="bannersp" class="gray">Introduzca una fecha para ver qué planta se convirtió en especie ese día</h1>
+                    <h1 id="bannersp" class="gray">Ingrese una fecha para ver qué planta se convirtió en una especie ese día.</h1>
                 </div>
                 <form name="birthday" action="">
                     <p>
@@ -42,19 +42,22 @@
                         <input type="button" value="Find Matching Species" onclick="validateDate()" class="button">
                         <input type="button" value="Try Another Date" onclick="resetForm()" class="button">
                     </p>
+                    <p id="sp-btns">Encuentra especies que coincidan / Prueba otra fecha</p> 
                 </form>
             </div>
         </div>
         <div class="row info-boxes">
             <div class="column left">
-                <h3>The plant below was recognized as a species on this date</h3>
+                <h3 id="lefth3en"></h3>
+                <h3 id="lefth3sp"></h3>
                 <div class="result-contain">
                     <p id="result"></p>
                     <div id="qrcode"></div>
                 </div>
             </div>
             <div class="column right">
-                <h3>MPM specimens collected on this date:</h3>
+                <h3 id="righth3en"></h3>
+                <h3 id="righth3sp"></h3>
                 <p id="msg"></p>
             </div>
         </div>

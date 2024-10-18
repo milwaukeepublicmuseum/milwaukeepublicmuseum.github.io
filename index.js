@@ -31,6 +31,10 @@ function validateDate() {
     document.getElementById('result').innerHTML = taxaarr[randidx];
     document.getElementById('banner').innerHTML = 'See your results below';
     document.getElementById('bannersp').innerHTML = 'Vea sus resultados a continuación';
+    document.getElementById('lefth3en').innerHTML = 'The plant below was recognized as a species on this date';
+    document.getElementById('lefth3sp').innerHTML = 'La planta que aparece a continuación fue reconocida como especie en esta fecha';
+    document.getElementById('righth3en').innerHTML = 'MPM specimens collected on this date:';
+    document.getElementById('righth3sp').innerHTML = 'Especímenes de MPM coleccionados en esta fecha:';
     document.getElementById('msg').innerHTML =  milspec[`${monthval}-${dayval}`];
     document.getElementById('d').disabled = true;
     document.getElementById('mo').disabled = true;
@@ -64,7 +68,11 @@ function resetForm() {
     document.getElementById('qrcode').innerHTML = '';
     document.getElementById('msg').innerHTML = '';
     document.getElementById('banner').innerHTML = 'Enter a date to see which plant became a species on that day';
-    document.getElementById('bannersp').innerHTML = 'Introduzca una fecha para ver qué planta se convirtió en especie ese día';
+    document.getElementById('bannersp').innerHTML = 'Ingrese una fecha para ver qué planta se convirtió en una especie ese día';
+    document.getElementById('lefth3en').innerHTML = '';
+    document.getElementById('lefth3sp').innerHTML = '';
+    document.getElementById('righth3en').innerHTML = '';
+    document.getElementById('righth3sp').innerHTML = '';
     document.getElementById('d').disabled = false;
     document.getElementById('mo').disabled = false;
 }
